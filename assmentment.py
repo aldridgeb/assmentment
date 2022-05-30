@@ -1,5 +1,5 @@
 import random
-
+# asking for age and name inputs
 def get_age():
     age = ''
     while not age.isnumeric():
@@ -18,12 +18,14 @@ def welcome():
       "you will need to enter the number witch applies")
 
 
-
+# inputs/questions
 welcome()
 days = [["tahi", "1"], ["rua", "2"], ["toru", "3"], ["wha", "4"], ["rima", "5"], ["ono", "6"], ["whitu", "7"], ["waru", "8"], ["tekau", "10"]]
 
 
 random.shuffle(days)
+# correct or incorect outputs
+
 
 for i in days:
     answer = input(f"enter the abbreviation witch applies to {i[0]}: ")
